@@ -11,7 +11,9 @@
 <body>
     <h1>привет, мир!</h1>
     <a href="/">главная</a>
-    <p>сумма чисел {{ $a }} и {{ $b }} равна {{ $c }}</p>
+    @foreach ($array as $item)
+    <p>{{ $item }}</p>
+    @endforeach
 </body>
 
 </html>
